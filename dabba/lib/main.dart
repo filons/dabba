@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:dabba/pages/acceuil.dart';
+import 'package:dabba/pages/home_page.dart';
+import 'package:dabba/theme/app_theme.dart';
 
 void main() {
   runApp(const MyApp());
@@ -8,15 +9,13 @@ void main() {
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
 
-  // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Flutter Demo',
-      theme: ThemeData(
-        colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
-      ),
-      home: const MyHomePage(titre: 'DABBA'),
+      title: 'DABBA',
+      theme: AppTheme.lightTheme(),
+      debugShowCheckedModeBanner: false,
+      home: const HomePage(),
     );
   }
 }

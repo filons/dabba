@@ -8,7 +8,7 @@ plugins {
 android {
     namespace = "com.example.dabba"
     compileSdk = flutter.compileSdkVersion
-    ndkVersion = flutter.ndkVersion
+    ndkVersion = "27.0.12077973" // Spécification explicite de la version NDK
 
     compileOptions {
         sourceCompatibility = JavaVersion.VERSION_11
